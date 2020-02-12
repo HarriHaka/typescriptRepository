@@ -28,4 +28,21 @@ class Cliente{
 }
 
 
+class Pessoa{
+	
+	constructor(public documento:string){
+		
+	}
+}
 
+class Cliente2 extends Pessoa{
+	static qtdDeDependentes : number = 0;
+	private _nome:string;
+	
+	constructor(nome:string,documento:string){
+		super(documento); //Chama o construtor da classe herdada
+		this._nome=nome;
+	}
+	registrar():void{
+	}
+}
